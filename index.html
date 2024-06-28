@@ -1,34 +1,54 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-<!DOCTYPE html>
-<html lang = en></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-<h1>Sushma's Portpolio</h1>
-<h2>I'm a Web developer</h2>
-<hr />
+    <div class = "flexbody">
+        <div class = "leftColumn">
+            <img class ="leftImage" src="./resource/logo.jpeg" alt="Sushma">
+            <h1> &lt;Sushma&gt; </h1>
+            <p>Full Stack Web Developer</p>
+            <button type = "button" class = "botton black-shadow mb-2 btn btn-dark">Email Me</button>
+            <div class = "socialMedia">
+                <a class ="icon" href="https://www.instagram.com/isha.devmedia"> <img src="./resource/instagram.svg" alt="instagram logo"> </a>
+                <a class ="icon" href="https://www.linkedin.com/in/sushma-h-s-457a7418b"> <img src="./resource/linkedin.svg" alt="instagram logo"> </a>            
+            </div>
+        </div>
+        <div class = "rightColumn">
+            <h1> <strong> &lt;/About me&gt; </strong> </h1>
+            <p class="rightPara ">Hello! I'm Sushma, a passionate fullstack developer with expertise in HTML, CSS, JavaScript,
+             React.js, and Node.js with Express.js, I specialize in building responsive, user-friendly 
+             web applications. My skills include jQuery for dynamic frontend experiences and integrating 
+             REST APIs for robust backend functionality. I'm enthusiastic about version control with GitHub 
+             and leverage Express middleware to enhance performance. Let's connect and Bring innovative ideas to life through technology!
+            </p>
+            <button type = "button" class = "botton black-shadow mb-2 btn btn-dark">Portfoilo</button>
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-<a href="./public/movie-ranking.html"> Movie Ranking Website</a>
-    <br />
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-<img src ="./assets/images/Movies.jpg" />
-<br />
-<!-- TODO 4: Add titles/subtitles etc. -->
-<a href="./public/birthday-invite.html"> Birth day invite</a>
-<br />
-<!-- TODO 5: Add a link to the project pages -->
-<img src ="./assets/images/Bday.jpg" />
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-<hr />
-<a href = "public/about.html">About Me</a>
-<a href = "public/contact.html">Contact ME</a>
+        </div>
+    </div>
+    <div class="PortfoiloSec">
+        <h1 class="secHeading"><strong>WEBSITES</strong></h1>
+        <div class="darbySec">
+            <div>
+                <img class ="PortfoiloLeftImage" src="./resource/darby.jpeg" alt="Sushma">
+            </div>
+            <div class="PortfoiloCont">
+                <h4>Darby Trading LLC</h4>
+                <p>Darby Trading specializes in importing a variety of products, including agricultural machinery, power tools, CNC machines, 3D printers, and sports equipment. They focus on innovation and quality, aiming to provide affordable yet high-quality solutions for diverse needs. The website highlights their key offerings like rice planters, wall printers, and agricultural drones, emphasizing their role in enhancing productivity and creativity.</p>
+                <a href="https://www.darbytrading.com/"><button type = "button" class = "botton black-shadow mb-2 btn btn-dark">Visit website</button> </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        $("button").on ("click", function(){
+            $("h4").hide();
+        });
+    </script>
 </body>
 </html>
