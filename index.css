@@ -1,5 +1,3 @@
-.body{
-}
 .flexbody{
     display: flex;
     justify-content: center;
@@ -93,4 +91,17 @@ margin-bottom: 20px;
 text-align: justify;
 padding-left: 20px;
 margin-left: 20px;
+}
+
+
+#PortfoiloBnt {
+    cursor: pointer;
+}
+
+#PortfoiloBnt:hover {
+    background-color: #fcfcfc;
+}
+
+#PortfoiloSec {
+    margin-top: 20px;
 }
