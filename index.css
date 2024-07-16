@@ -105,3 +105,38 @@ margin-left: 20px;
 #PortfoiloSec {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    /* Adjust layout for mobile devices */
+    .flexbody  {
+        flex-direction: column;
+        background-color: #fcfcfc;
+    }
+    .rightPara{
+        padding: 10px;
+        margin: 5px;
+        text-align:justify;
+
+    }
+    .darbySec{
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+        text-align:justify;
+
+    }
+    .PortfoiloSec{
+        padding: 10px;
+        margin: 5px;
+        text-align:justify;
+    }
+
+    .PortfoiloCont{
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+
+    }
+
+
+}
